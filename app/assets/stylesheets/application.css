@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.recipe-box {
+  border: 2px black solid;
+}
