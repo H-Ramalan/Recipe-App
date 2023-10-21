@@ -1,5 +1,5 @@
 class GeneralShoppingListController < ApplicationController
-    def index
+  def index
     @foods = Food.includes(:recipe_foods).where(user_id: current_user.id)
     @missing_ingredients = []
     @foods.each do |food|
