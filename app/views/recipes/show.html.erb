@@ -24,8 +24,10 @@
     </div>
   </div>
   <div class='btns'>
-   <button class='shopping btn'>Generate Shopping list</button>
-   <button class="ingredients btn">Add Ingredient</button>
+  <% if can? :update, @recipe%>
+         <%=link_to "Generate Shopping List", general_shopping_list_index_path, class: "button" %>
+         <%=link_to "Add ingredient", new_recipe_recipe_food_path(@recipe), class: "button" %>
+  <%end%>
   </div>
   <div class="table-div">
   <table class="table table-bordered">
