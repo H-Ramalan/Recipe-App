@@ -74,5 +74,6 @@ group :test do
 end
 
 gem 'devise', '~> 4.9'
+gem 'factory_bot_rails'
 gem 'letter_opener', '~> 1.8'
 gem 'rubocop', '>= 1.0', '< 2.0'
