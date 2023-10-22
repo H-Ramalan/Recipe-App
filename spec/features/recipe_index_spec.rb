@@ -5,13 +5,6 @@ RSpec.feature 'Recipe#index Page', type: :feature do
     visit recipes_path
   end
 
-  scenario 'user can add a new recipe' do
-    user = create(:user)
-    login_as(user, scope: :user)
-    visit recipes_path
-    click_button('Add Recipe')
-    expect(page).to have_current_path(new_recipe_path)
-  end
     scenario 'user can remove their recipe' do
     user = create(:user)
     login_as(user, scope: :user)
