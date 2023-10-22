@@ -13,7 +13,6 @@ RSpec.describe Food, type: :model do
     expect(food).to_not be_valid
   end
 
-
   it 'validates the minimum name length of 2 characters' do
     food.name = 'Y'
     expect(food).to_not be_valid
