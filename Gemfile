@@ -76,3 +76,5 @@ end
 gem 'devise', '~> 4.9'
 gem 'letter_opener', '~> 1.8'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'factory_bot_rails'
+
