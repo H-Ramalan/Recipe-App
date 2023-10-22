@@ -28,5 +28,4 @@ RSpec.feature 'Food#index Page', type: :feature do
     visit foods_path
     expect(page).not_to have_button('Delete', exact: true)
   end
-
 end

@@ -5,7 +5,7 @@ RSpec.feature 'Recipe#index Page', type: :feature do
     visit recipes_path
   end
 
-    scenario 'user can remove their recipe' do
+  scenario 'user can remove their recipe' do
     user = create(:user)
     login_as(user, scope: :user)
     visit recipes_path
